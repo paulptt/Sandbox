@@ -3,6 +3,14 @@
 #include <iostream>
 using namespace std;
 
+void primealloc()
+{
+	int n; 
+	cout << "Enter max target number for prime" << endl;
+	cin >> n;
+	int parray[n][n][n];  // need to allocate this size dynamicaly to n
+}
+
 void RaiseBase()
 {
 	int base = 1;
@@ -48,4 +56,5 @@ void Query()
 		break;
 	default:
 		cout << "You didn't choose a valid option" << endl;
+	}
 }

@@ -4,6 +4,7 @@
 using namespace std;
 
 void RaiseBase();
+void Query();
 
 int main()
 {
