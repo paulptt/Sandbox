@@ -8,7 +8,7 @@ void primealloc()
 	int n; 
 	cout << "Enter max target number for prime" << endl;
 	cin >> n;
-	int parray[n][n][n];  // need to allocate this size dynamicaly to n
+	int parray[1000][1000][1000];  // need to allocate this size dynamicaly to n
 }
 
 void RaiseBase()
