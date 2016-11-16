@@ -1,3 +1,5 @@
 ﻿  Source.cpp
-  Project1.vcxproj -> C:\Users\pault\Source\Repos\Sandbox\Project1\Debug\Project1.exe
-  Project1.vcxproj -> C:\Users\pault\Source\Repos\Sandbox\Project1\Debug\Project1.pdb (Partial PDB)
+c:\users\paulp\source\repos\sandbox\project1\project1\header1.h(13): warning C4101: 'compo': unreferenced local variable
+  LINK : C:\Users\paulp\Source\Repos\Sandbox\Project1\Debug\Project1.exe not found or not built by the last incremental link; performing full link
+  Project1.vcxproj -> C:\Users\paulp\Source\Repos\Sandbox\Project1\Debug\Project1.exe
+  Project1.vcxproj -> C:\Users\paulp\Source\Repos\Sandbox\Project1\Debug\Project1.pdb (Partial PDB)

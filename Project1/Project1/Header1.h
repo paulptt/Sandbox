@@ -3,12 +3,28 @@
 #include <iostream>
 using namespace std;
 
-void primealloc()
+void primealloc_1()
 {
 	int n; 
 	cout << "Enter max target number for prime" << endl;
 	cin >> n;
-	int parray[1000][1000][1000];  // need to allocate this size dynamicaly to n
+	int mark[1000];  // need to allocate this size dynamicaly to n
+	int prime[1000];
+	int compo[1000];
+	for (int i=2; i<=sqrt(n); i++)
+	{
+		if (mark[i] = 0) // if not yet marked, then claim that number as prime
+		{
+			mark[i] = 1;
+			prime[i] = 1;
+			for (int ii = i; ii <= n; ii = ii + i) // mark all increments of i as non-prime
+			{
+				mark[ii] = 1; 
+			}
+		}
+	} // End of this loop, then all numbers up to n should have been classified as prime or not
+	for (int i = 2; i <= n; i++)
+		cout << i << "is marked as" << prime[i] << endl;
 }
 
 void RaiseBase()
