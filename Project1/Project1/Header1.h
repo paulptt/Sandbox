@@ -18,7 +18,7 @@ void primealloc_1()
 			mark[i] = 1;
 			prime[i] = 1;
 			//cout << "Processing number " << i << endl;
-			for (int ii = i+i; ii <= n; ii = ii + i) // mark all increments of i as non-prime
+			for (int ii=i*i; ii<=n; ii=ii+i) // mark all increments of i as non-prime
 			{
 				//cout << "stepping " << ii;
 				mark[ii] = 1; 
@@ -27,9 +27,9 @@ void primealloc_1()
 			}
 		}
 	} // End of this loop, then all numbers up to n should have been classified as prime or not
-	for (int i = 2; i <= n; i++)
+	for (int i=2; i<=n; i++)
 	{
-		if (prime[i] == 1)
+		if (prime[i] == 1 || mark[i] != 1)
 			cout << i << " is marked as prime" << endl;
 	}
 }
