@@ -10,7 +10,7 @@ void primealloc_1();
 int main()
 {
 	primealloc_1();
-	RaiseBase();
+	//RaiseBase();
 	Query();
 	return 0;
 }
