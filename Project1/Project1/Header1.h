@@ -27,6 +27,7 @@ void primealloc_1()
 			}
 		}
 	} // End of this loop, then all numbers up to n should have been classified as prime or not
+	// At this point, all numbers not marked or already marked prime are primes
 	for (int i=2; i<=n; i++)
 	{
 		if (prime[i] == 1 || mark[i] != 1)
