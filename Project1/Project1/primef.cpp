@@ -3,11 +3,13 @@
 #include <iostream>
 using namespace std;
 
-
-primef::primef()
+primef::primef(int max):maxnum(max)	// Constructor definition of class primef
 {
+	cout << "Start class primef and get initial maxnum = " << maxnum << endl;
+
 }
 
+// Function routine that carries class primef
 void primef::primealloc_2()
 {
 	int n;
@@ -41,6 +43,6 @@ void primef::primealloc_2()
 }
 
 
-primef::~primef()
+primef::~primef() // Destructor definition of class primef
 {
 }
