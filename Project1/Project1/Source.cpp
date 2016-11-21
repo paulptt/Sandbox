@@ -11,14 +11,14 @@ void primealloc_1();
 int main()
 {
 	int n;
-	cout << "Enter max number to build prime number database";
+	cout << "Enter max number to build prime number database ";
 	cin >> n;
 	cout << endl;
 
 	//primealloc_1();
 	//RaiseBase();
 
-	primef primefunc1(n); // create object primefunc1 to class primef
+	primef primefunc1(n); // create object primefunc1 to class primef with init value n (defined as max in primef constructor declaration)
 	primef primefunc2(n); // create object primefunc2 to class primef
 	primef *pfunc2 = &primefunc2; // Use pointer to access object primefunc2
 
