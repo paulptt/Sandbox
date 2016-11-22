@@ -8,8 +8,11 @@ void primealloc_1()
 	int n; 
 	cout << "Enter max target number for prime" << endl;
 	cin >> n;
-	int mark[1000];  // need to allocate this size dynamicaly to n
-	int prime[1000];
+	int * mark;  // for allocate the array size dynamicaly to n
+	int * prime;
+
+	mark = new int[n];
+	prime = new int[n];
 
 	for (int i=2; i<=sqrt(n); i++)
 	{
@@ -33,6 +36,12 @@ void primealloc_1()
 		if (prime[i] == 1 || mark[i] != 1)
 			cout << i << " is marked as prime" << endl;
 	}
+
+	// Deallocate array pointers mark and prime
+	delete[] mark;
+	delete[] prime;
+	mark = NULL;
+	prime = NULL;
 }
 
 void RaiseBase()
